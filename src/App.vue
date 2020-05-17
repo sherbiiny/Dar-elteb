@@ -8,7 +8,7 @@
 </template>
 
 <script>
-import Header from '@/components/Header'
+import Header from '@/components/Header/Header'
 import Doc from '@/components/Doc'
 import $ from 'jquery'
 import niceScroll from 'jquery.nicescroll'

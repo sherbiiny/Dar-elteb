@@ -61,3 +61,11 @@ img {
     z-index: 20;
   }
 }
+
+@media screen and (max-width: 760px){
+
+  body {
+    font-size: 14px;
+  }
+
+}

@@ -1,15 +1,17 @@
 <template>
   <main class="Doc">
-    <v-row>
-      <v-col md="6" class="text" data-aos="fade-up">
-        <h2>مستشفي دار الطب بالمنصورة</h2>
-        <h4>"زود فرص ارباحك باستثمارك و عملك معنا"</h4>
-        <div class="box">ضمن نخبة من اكبر المستثمرين و الأطباء بالدقهلية</div>
-      </v-col>
-      <v-col md="6" data-aos="fade-up" data-aos-delay="500">
-        <img src="../assets/img/doc.png">
-      </v-col>
-    </v-row>
+    <v-container>
+      <v-row>
+        <v-col md="6" class="text" data-aos="fade-up">
+          <h2>مستشفي دار الطب بالمنصورة</h2>
+          <h4>"زود فرص ارباحك باستثمارك و عملك معنا"</h4>
+          <div class="box">ضمن نخبة من اكبر المستثمرين و الأطباء بالدقهلية</div>
+        </v-col>
+        <v-col md="6" data-aos="fade-up" data-aos-delay="500">
+          <img src="../assets/img/doc.png">
+        </v-col>
+      </v-row>
+    </v-container>
   </main>
 </template>
 
@@ -17,7 +19,6 @@
 @import '../assets/config';
 
 .Doc {
-  padding: 50px;
   color: $prim;
 
   .text {
@@ -42,7 +43,7 @@
       max-width: 400px;
       margin: auto;
       padding: 20px;
-      margin-top: 150px;
+      margin-top: 100px;
       cursor: pointer;
       user-select: none
     }
