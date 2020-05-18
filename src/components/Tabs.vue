@@ -1,51 +1,53 @@
 <template>
   <main class="Tabs">
-    <v-container>
-      <v-row class="tabs-cont">
-        <v-col lg="6" class="col-12">
-          <v-tabs color="white">
-            <v-tab @click="img = tab.num" class="white--text" v-for="tab in tabs" :key="tab.name">{{tab.name}}</v-tab>
-            <v-tab-item class="text-center" v-for="item in items" :key="item.num">
-              <h1 v-if="item.title">{{ item.title }}</h1>
-              <p v-html="item.content[0]"></p>
-              <p v-if="item.content[1]">{{ item.content[1] }}</p>
-            </v-tab-item>
-          </v-tabs>
-          
-        </v-col>
-        <v-col lg="6" class="col-12">
-          <img v-if="img == 1" src="../assets/img/tabs/1.png">
-          <img v-if="img == 2" src="../assets/img/tabs/2.png">
-          <img v-if="img == 3" src="../assets/img/tabs/3.png">
-        </v-col>
+    <div class="border">
+      <v-container>
+        <v-row class="tabs-cont">
+          <v-col lg="6" class="col-12" data-aos="fade-up">
+            <v-tabs color="white">
+              <v-tab @click="img = tab.num" class="white--text" v-for="tab in tabs" :key="tab.name">{{tab.name}}</v-tab>
+              <v-tab-item class="text-center" v-for="item in items" :key="item.num">
+                <h1 v-if="item.title">{{ item.title }}</h1>
+                <p v-html="item.content[0]"></p>
+                <p v-if="item.content[1]">{{ item.content[1] }}</p>
+              </v-tab-item>
+            </v-tabs>
+            
+          </v-col>
+          <v-col lg="6" class="col-12" data-aos="fade-up" data-aos-delay="300">
+            <img v-if="img == 1" src="../assets/img/tabs/1.png">
+            <img v-if="img == 2" src="../assets/img/tabs/2.png">
+            <img v-if="img == 3" src="../assets/img/tabs/3.png">
+          </v-col>
 
-      </v-row>
+        </v-row>
 
-      <div class="sm-container">
+        <div class="sm-container">
 
-        <div class="field">
-          <h1>نبذة عن المشروع</h1>
-          <img src="../assets/img/tabs/1.png">
-          <h4>تقع "مستشفي دار الطب" بمدينة المنصورة</h4>
-          <p>ضمن <span>مشروع اندلسية</span> الذي يضم ايضا مجمع سكني مكون من 250 وحدة سكنية و سنتر تجاري ضخم مكون من 150 محل تجاري</p>
+          <div class="field">
+            <h1>نبذة عن المشروع</h1>
+            <img src="../assets/img/tabs/1.png">
+            <h4>تقع "مستشفي دار الطب" بمدينة المنصورة</h4>
+            <p>ضمن <span>مشروع اندلسية</span> الذي يضم ايضا مجمع سكني مكون من 250 وحدة سكنية و سنتر تجاري ضخم مكون من 150 محل تجاري</p>
+          </div>
+
+          <div class="field">
+            <h1>مساحة المشروع</h1>
+            <img src="../assets/img/tabs/2.png">
+            <h4>صمم المشروع علي مسطح مساحته 3000م²</h4>
+            <p>روعي فيها الشروط التصميمية الصحية للمستشفيات حيث تضم في هذه المساحة 4 غرف عمليات كبيرة و غرفتان للعمليات المتخصصة</p>
+            <p>بالاضافة الي العيادات الخارجية و معامل التحليل و مراكز الاشعة المصممة طبقا لشروط وزارة الصحة</p>
+          </div>
+
+          <div class="field">
+            <h1>موقع المشروع</h1>
+            <img src="../assets/img/tabs/3.png">
+            <p>تقع المستشفي علي مجموعة من الطرق الرئيسية أمام كوبري الدراسات بالاتجاه المقابل لمساكن الميناء</p>
+            <p>و ذلك لخدمة قطاع عريض من المواطنين حيث يتيح الوصول السريع في حالات الطوارئ و الحالات التي تحتاج الي تدخل جراحي سريع</p>
+          </div>
         </div>
-
-        <div class="field">
-          <h1>مساحة المشروع</h1>
-          <img src="../assets/img/tabs/2.png">
-          <h4>صمم المشروع علي مسطح مساحته 3000م²</h4>
-          <p>روعي فيها الشروط التصميمية الصحية للمستشفيات حيث تضم في هذه المساحة 4 غرف عمليات كبيرة و غرفتان للعمليات المتخصصة</p>
-          <p>بالاضافة الي العيادات الخارجية و معامل التحليل و مراكز الاشعة المصممة طبقا لشروط وزارة الصحة</p>
-        </div>
-
-        <div class="field">
-          <h1>موقع المشروع</h1>
-          <img src="../assets/img/tabs/3.png">
-          <p>تقع المستشفي علي مجموعة من الطرق الرئيسية أمام كوبري الدراسات بالاتجاه المقابل لمساكن الميناء</p>
-          <p>و ذلك لخدمة قطاع عريض من المواطنين حيث يتيح الوصول السريع في حالات الطوارئ و الحالات التي تحتاج الي تدخل جراحي سريع</p>
-        </div>
-      </div>
-    </v-container>
+      </v-container>
+    </div>
   </main>
 </template>
 
@@ -105,6 +107,16 @@ export default {
   min-height: 460px;
   position: relative;
   z-index: 5;
+  padding: 5px 0 !important;
+  padding-left: 0;
+  padding-right: 0;
+
+  .border {
+    border-top: 3px solid #FFF;
+    border-bottom: 3px solid #FFF;
+    height: 100%;
+    padding: 30px 0;
+  }
 
   .sm-container {
     display: none;
@@ -112,10 +124,6 @@ export default {
 
   img {
     max-width: 500px;
-  }
-
-  .v-container {
-    border-top: 5px solid #000;
   }
 
   .col {

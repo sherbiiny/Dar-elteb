@@ -4,6 +4,9 @@
       <Header/>
       <Doc/>
       <Tabs/>
+      <Majors/>
+      <Map/>
+      <Footer/>
     </v-content>
   </v-app>
 </template>
@@ -12,6 +15,9 @@
 import Header from '@/components/Header/Header'
 import Doc from '@/components/Doc'
 import Tabs from '@/components/Tabs'
+import Majors from '@/components/Majors'
+import Map from '@/components/Map'
+import Footer from '@/components/Footer'
 import $ from 'jquery'
 import niceScroll from 'jquery.nicescroll'
 import AOS from 'aos'
@@ -24,6 +30,9 @@ export default {
     Header,
     Doc,
     Tabs,
+    Majors,
+    Map,
+    Footer,
   },
 
   mounted() {

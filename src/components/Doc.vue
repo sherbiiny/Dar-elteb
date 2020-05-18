@@ -23,6 +23,7 @@
 
   .text {
     text-align: center;
+    padding-bottom: 40px;
 
     .box {
       border: 2px solid $prim;
