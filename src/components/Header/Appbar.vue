@@ -94,6 +94,10 @@ export default {
   position: relative;
   z-index: 6;
 
+  .search {
+    margin-right: 50px;
+  }
+
   .logo2, .bars {
     display: none;
   }
@@ -106,7 +110,7 @@ export default {
 
     .v-list-item {
       width: 100px;
-      font: 600 16px 'Cairo';
+      font: 600 16px 'DIN Next';
       color: #444;
       text-align: center;
       display: flex;

@@ -15,9 +15,9 @@ export default {
     return {
       carouselItems: [
         {num: 1, content: "نلتزم بالتميز في تقديم خدمات طبية عالية الجودة"},
-        {num: 2, content: "نلتزم بالتميز في تقديم خدمات طبية عالية الجودة"},
-        {num: 3, content: "نلتزم بالتميز في تقديم خدمات طبية عالية الجودة"},
-        {num: 4, content: "نلتزم بالتميز في تقديم خدمات طبية عالية الجودة"}
+        {num: 2, content: "ندرس و نخطط لنبتكر أفضل الخدمات في المجال الطبي"},
+        {num: 3, content: "نعمل علي زيادة الفرص الفريدة للاستثمار في المجال الطبي"},
+        {num: 4, content: "نعمل علي تخطي التوقعات و تحقيق افضل النتائج"}
       ]
     }
   },
@@ -84,8 +84,8 @@ export default {
     transform: translate(-50%, -50%);
     background: rgba($color: $prim, $alpha: .3);
     color: #FFF;
-    font-size: 2.8em;
-    font-weight: 600;
+    font-size: 2.4em;
+    font-weight: 400;
     z-index: 21;
     text-align: center;
     border-radius: 5px;

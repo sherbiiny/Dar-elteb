@@ -1,0 +1,26 @@
+// Variables
+$prim: #035aa6;
+$sm: 600px;
+$md: 960px;
+$lg: 1264px;
+
+// Mixins
+@mixin centerElement() {
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin centerContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin MQ($size) {
+  @media screen and (min-width: $size){
+    @content;
+  }
+}
+
+

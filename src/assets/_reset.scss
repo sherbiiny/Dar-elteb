@@ -1,0 +1,25 @@
+.theme--light.v-application#app {
+  min-height: 100vh;
+  height: 1000vh;
+  font-family: 'DIN Next';
+  
+  .v-btn {
+    letter-spacing: 0 !important;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  text-decoration: none;
+
+}
+
+body {
+  direction: rtl;
+
+  img {
+    max-width: 100%;
+  }
+}

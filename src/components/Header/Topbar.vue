@@ -47,11 +47,11 @@
         color: #FFF;
         padding: 0 10px;
         line-height: 50px;
-        font-family: 'Cairo';
 
         img {
           max-width: 30px !important;
           margin-left: 10px;
+          position: static !important;
         }
       }
 
